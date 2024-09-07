@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="page-wrapper">
         <div class="container">
             <div class="header">
                 <button class="header__b1"></button>
-                <div class="header__burger first"></div>
-                <div class="header__burger"></div>
-                <div class="header__burger"></div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn first" ></button>
+                <button class="dropbtn" ></button>
+                <button class="dropbtn" ></button>
+                    <div class="dropdown-content">
+                        <h2 class="drop__h2">Menu</h2>
+                      <button  class="drop__button">About Me </button>
+                      <button  class="drop__button">My task</button>
+                      <button  class="drop__button">Projects</button>
+                      <button  class="drop__button">Reviews</button>
+                      <button  class="drop__button"> Contacts</button>
+                      <button class="close2">close</button>
+                    </div>
+                  </div>
+                
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h1 class="modal__information">Personal Perfomance :</h1>
+    <input placeholder="Name" class="modal__input1">
+    <input placeholder="Surename" class="modal__input2">
+    <input placeholder="E-mail" class="modal__input3">
+    <button class="close">Send</button>
+  </div>
+</div>
                 <ul class="header-ul">
                     <li class="header-ul__li">About Me </li>
                     <li class="header-ul__li">My task</li>
@@ -21,7 +44,8 @@
                     <li class="header-ul__li">Reviews</li>
                     <li class="header-ul__li">Contacts</li>
                 </ul>
-                <button class="header__b2" onclick="openModal()">Contact me</button>
+                <button class="header__b2" id="openModalBtn" >Contact me</button>
+                
                 <img src="/Group 5.png" alt="" class="header-img__graphics">
                 <img src="/Group 8.png" alt="" class="header-img__shadow">
                 <img src="/Mask Group (1).png" alt="" class="header-img__image">
@@ -46,8 +70,46 @@
                     <p class="main-up__text5">Work in the field of graphic design</p>
                     <img src="/Group 12.png" alt="" class="main-up__notebook">
                 </div>
+            
+                <div class="main-center">
+                    <img src="/Group 5 (1).png" alt="" class="main-center__project">
+                    <img src="/Group 1.png" alt="" class="main-center__photo1">
+                    <a href="#" class="main-center__describe1">Business Cards <br>Behance ></a>
+                    <img src="/Group 2 (1).png" alt="" class="main-center__photo2">
+                    <a href="#" class="main-center__describe2">Website design <br>Behance ></a>
+                    <img src="/Group 3 (1).png" alt="" class="main-center__photo3">
+                    <a href="#" class="main-center__describe3">Banners <br>Behance ></a>
+                    <img src="/Group 4.png" alt="" class="main-center__photo4">
+                    <a href="#" class="main-center__describe4">Branding <br>Behance ></a>
+                    <button class="main-center__button">See more</button>
+                </div>
+                <div class="main-down">
+                    <img src="/Group 3 (2).png" alt="" class="main-down__reviews">
+                    <img src="/Group 7 (2).png" alt="" class="main-down__photo1">
+                    <img src="/Group 6 (1).png" alt="" class="main-down__messege1">
+                    <p class="main-down__describe1">Anna Schmidt <br> ___________________<br> Fast quality work, good <br> service, 24 hours on <br> call,reasonable prices</p>
+                    <img src="/Group 9 (1).png" alt="" class="main-down__photo2">
+                    <img src="/Group 8 (2).png" alt="" class="main-down__messege2">
+                    <p class="main-down__describe2">Mark Spencer<br> ___________________<br>Individual approach,<br> good service,<br> interesting new ideas,<br> fast, high quality</p>
+                    <img src="/Group 2 (2).png" alt="" class="main-down__photo3">
+                    <img src="/Group 1 (1).png" alt="" class="main-down__messege3">
+                    <p class="main-down__describe3">Daria Graf<br> _______________________<br>Сreative approach, listens to <br> the customer and considers <br> an individual approach</p>
+                    <img src="/Group 1 (2).png" alt="" class="main-down__menu">
+                    <p class="main-down__describe4">Let’s work <br> together on your <br> next Project <br> <br><span class="main-down__describe5">If you want to contact me for an order, click on the button and <br> contact me</span></p>
+                    <button class="main-down__button">Contact me</button>
+                </div>
+                <div class="footer">
+                    <img src="/Uliana Usenko.png" alt="" class="footer__name">
+                    <div class="footer__line"></div>
+                    <img src="/design services.png" alt="" class="footer__design">
+                    <p class="footer__describe1">Main page</p>
+                    <p class="footer__describe2">Terms Of Service </p>
+                    <p class="footer__describe3">E-mail: ulianaysenko@gmail.com</p>
+                    <p class="footer__describe4">+38(067)656-73-95</p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

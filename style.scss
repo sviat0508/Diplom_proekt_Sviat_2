@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0.3px;
+  }
+  
+  .page-wrapper {}
+  
+  .container {}
+  
+  .header {
+    background: url(/Rectangle\ 34.png) no-repeat center/cover;
+    width: 2110px;
+    height: 1100px;
+    z-index: -1;
+  
+    &__b1,
+    &__b2 {
+      border-radius: 27px;
+      width: 160px;
+      height: 56px;
+      background-color: #d80808;
+      margin-left: 160px;
+      margin-top: 56px;
+      position: absolute;
+      top: 13px;
+  
+      &.header__b2 {
+        left: 1700px;
+        top: 43px;
+      }
+    }
+  
+    &-ul {
+      display: flex;
+      position: absolute;
+      justify-content: space-between;
+      width: 500px;
+      left: 900px;
+      top: 96px;
+  
+      &__li {
+        list-style: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  
+    &-img {
+      &__graphics {
+        position: absolute;
+        top: 360px;
+        left: 440px;
+        z-index: 1;
+      }
+  
+      &__shadow {
+        position: absolute;
+        top: 200px;
+        left: 660px;
+        z-index: 0;
+      }
+  
+      &__image {
+        position: absolute;
+        z-index: 1;
+        left: 730px;
+        top: 160px;
+      }
+  
+      &__design {
+        position: absolute;
+        z-index: 2;
+        top: 800px;
+        left: 1270px;
+      }
+  
+      &__ball-shadow-1 {
+        position: absolute;
+        top: 890px;
+        left: 740px;
+      }
+  
+      &__ball-shadow-2 {
+        position: absolute;
+        top: 320px;
+        left: 1350px;
+      }
+    }
+  
+    &-p {
+      &__1,
+      &__2 {
+        position: absolute;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 147%;
+        letter-spacing: 0.05em;
+  
+        &.header-p__1 {
+          color: #bb9292;
+          top: 350px;
+          left: 1450px;
+        }
+  
+        &.header-p__2 {
+          color: #f00;
+          top: 1000px;
+          left: 530px;
+        }
+      }
+    }
+  }
+  
+  .dropbtn {
+    display: none;
+    margin-top: 20px;
+    margin-left: 600px;
+    height: 5px;
+    width: 80px;
+    background-color: white;
+  }
+  
+  .first {
+    margin-top: 80px;
+  }
+  
+  .main {}
+  
+  .main-up {
+    background: url(/Rectangle\ 35.png) no-repeat center/cover;
+    width: 2110px;
+    height: 1100px;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    
+    &.animated {
+      opacity: 1;
+      transform: translateY(0);
+  }
+    &__task {
+      position: absolute;
+      top: 1150px;
+      left: 100px;
+    }
+  
+    &__first {
+      position: absolute;
+      top: 1250px;
+      left: 500px;
+      
+    }
+  
+    &__text1 {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      top: 1390px;
+      left: 650px;
+    }
+  
+    &__heart {
+      position: absolute;
+      top: 1200px;
+      left: 1000px;
+    }
+  
+    &__second {
+      position: absolute;
+      top: 1500px;
+      left: 600px;
+    }
+  
+    &__text2 {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff9f9;
+      position: absolute;
+      top: 1600px;
+      left: 730px;
+    }
+  
+    &__text3 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      top: 1650px;
+      left: 730px;
+    }
+  
+    &__message {
+      position: absolute;
+      top: 1400px;
+      left: 1200px;
+    }
+  
+    &__third {
+      position: absolute;
+      top: 1650px;
+      left: 800px;
+    }
+  
+    &__text4 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      text-align: right;
+      color: #000;
+      position: absolute;
+      top: 1830px;
+      left: 1080px;
+    }
+  
+    &__text5 {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      top: 1970px;
+      left: 1050px;
+    }
+  
+    &__notebook {
+      position: absolute;
+      top: 1700px;
+      left: 1400px;
+    }
+  }
+  
+  .main-center {
+    background: url(/Rectangle\ 36.png) no-repeat center/cover;
+    width: 2110px;
+    height: 1300px;
+  
+    &__project {
+      position: absolute;
+      top: 2300px;
+      left: 100px;
+    }
+  
+    &__photo1 {
+      position: absolute;
+      top: 2500px;
+      left: 300px;
+    }
+  
+    &__describe1 {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 2800px;
+      left: 300px;
+      text-decoration: none;
+    }
+  
+    &__photo2 {
+      position: absolute;
+      top: 2500px;
+      left: 1300px;
+    }
+  
+    &__describe2 {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 3200px;
+      left: 300px;
+      text-decoration: none;
+    }
+  
+    &__photo3 {
+      position: absolute;
+      top: 2900px;
+      left: 300px;
+    }
+  
+    &__describe3 {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 2800px;
+      left: 1300px;
+      text-decoration: none;
+    }
+  
+    &__photo4 {
+      position: absolute;
+      top: 2900px;
+      left: 1300px;
+    }
+  
+    &__describe4 {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 3200px;
+      left: 1300px;
+      text-decoration: none;
+    }
+  
+    &__button {
+      font-family: var(--font-family);
+      font-weight: 900;
+      font-size: 17px;
+      color: #fff;
+      border-radius: 27px;
+      width: 184px;
+      height: 63px;
+      background: #d80808;
+      position: absolute;
+      top: 3350px;
+      left: 950px;
+    }
+  }
+  
+  .main-down {
+    background: url(/фон2\ 1.png) no-repeat center/cover;
+    width: 2110px;
+    height: 2100px;
+  
+    &__reviews {
+      position: absolute;
+      top: 3600px;
+      left: 100px;
+    }
+  
+    &__photo1 {
+      position: absolute;
+      top: 3700px;
+      left: 300px;
+    }
+  
+    &__messege1 {
+      position: absolute;
+      top: 4000px;
+      left: 450px;
+    }
+  
+    &__describe1 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      top: 4035px;
+      left: 530px;
+    }
+  
+    &__photo2 {
+      position: absolute;
+      top: 4050px;
+      left: 850px;
+    }
+  
+    &__messege2 {
+      position: absolute;
+      top: 4470px;
+      left: 870px;
+    }
+  
+    &__describe2 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 4520px;
+      left: 970px;
+    }
+  
+    &__photo3 {
+      position: absolute;
+      top: 3700px;
+      left: 1400px;
+    }
+  
+    &__messege3 {
+      position: absolute;
+      top: 4000px;
+      left: 1300px;
+    }
+  
+    &__describe3 {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      top: 4035px;
+      left: 1380px;
+    }
+  
+    &__menu {
+      position: absolute;
+      top: 4700px;
+      width: 2110px;
+  
+      &__describe4 {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 40px;
+        color: #f3d5d5;
+        position: absolute;
+        top: 4930px;
+        left: 380px;
+      }
+  
+      &__button {
+        border-radius: 27px;
+        width: 196px;
+        height: 63px;
+        box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.25);
+        background: #f4e2e2;
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 19px;
+        color: #f00;
+        position: absolute;
+        top: 5050px;
+        left: 1400px;
+      }
+  
+      &__describe5 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        color: #e8d6d6;
+      }
+    }
+  }
+  
+  .footer {
+    background: url(/Rectangle\ 45.png) no-repeat center/cover;
+    position: absolute;
+    top: 5600px;
+    width: 2110px;
+    height: 400px;
+  
+    &__name {
+      position: absolute;
+      top: 180px;
+      left: 200px;
+    }
+  
+    &__design {
+      position: absolute;
+      top: 70px;
+      left: 750px;
+    }
+  
+    &__describe1,
+    &__describe2,
+    &__describe3,
+    &__describe4 {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      color: #d8d3d3;
+      position: absolute;
+    }
+  
+    &__describe1 {
+      top: 180px;
+      left: 750px;
+    }
+  
+    &__describe2 {
+      top: 280px;
+      left: 750px;
+    }
+  
+    &__describe3 {
+      top: 280px;
+      left: 1250px;
+    }
+  
+    &__describe4 {
+      top: 280px;
+      left: 1750px;
+    }
+  
+    &__line {
+      background-color: red;
+      height: 300px;
+      width: 1px;
+      position: absolute;
+      top: 40px;
+      left: 700px;
+    }
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(33, 29, 29, 0.85);
+  
+    &-content {
+      background: rgba(194, 0, 0, 0.52);
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 24px;
+      width: 1046px;
+      height: 681px;
+      margin-left: 500px;
+    }
+  
+    &__input1,
+    &__input2,
+    &__input3 {
+      border: 4px solid rgba(238, 5, 5, 0.13);
+      border-radius: 15px;
+      width: 934px;
+      height: 64px;
+      background: rgba(0, 0, 0, 0.48);
+      position: absolute;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 20px;
+      color: #fc0000;
+  
+      &.modal__input1 {
+        top: 350px;
+      }
+  
+      &.modal__input2 {
+        top: 450px;
+      }
+  
+      &.modal__input3 {
+        top: 550px;
+      }
+    }
+  
+    &__close {
+      font-size: 28px;
+      font-weight: bold;
+      border-radius: 27px;
+      width: 150px;
+      height: 52px;
+      background: #d80808;
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: #000;
+      position: absolute;
+      top: 800px;
+      left: 950px;
+  
+      &:hover,
+      &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  
+    &-content {
+      display: none;
+      position: absolute;
+      background-color: #ff0000;
+      width: 410px;
+      height: 450px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 3;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      border: 2px solid black;
+      border-radius: 24px;
+  
+      & a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      & a:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  
+    &:hover .dropdown-content {
+      display: block;
+    }
+  
+    &:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+  }
+  
+  .drop__h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50%;
+    letter-spacing: -0.04em;
+    color: #ededed;
+    position: relative;
+    left: 160px;
+    top: px;
+  }
+  
+  .drop__button {
+    border-radius: 13px;
+    width: 406px;
+    height: 58px;
+    background: rgba(58, 0, 0, 0.27);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #efe5e5;
+    position: relative;
+    top: 40px;
+  }
+  
+  .close2 {
+    border-radius: 27px;
+    width: 159px;
+    height: 52px;
+    background: #d80808;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #000;
+    position: absolute;
+    top: 360px;
+    left: 130px;
+  }
+  
+  @media (max-width: 368px) {
+    .header {
+      width: 1450px;
+  
+      &__b1 {
+        display: none;
+      }
+  
+      &-ul {
+        display: none;
+      }
+  
+      &__b2 {
+        position: absolute;
+        left: 1050px;
+      }
+  
+      &-img__design {
+        position: absolute;
+        top: 480px;
+        left: 200px;
+      }
+  
+      &-img__graphics {
+        position: absolute;
+        left: 200px;
+      }
+  
+      &-img__ball-shadow-2 {
+        position: absolute;
+        top: 920px;
+        left: 800px;
+      }
+  
+      &-img__ball-shadow-1 {
+        position: absolute;
+        top: 820px;
+        left: 600px;
+      }
+  
+      &-p__1 {
+        position: absolute;
+        top: 1020px;
+        left: 760px;
+        width: 200px;
+      }
+  
+      &-p__2 {
+        position: absolute;
+        top: 940px;
+        left: 570px;
+        width: 200px;
+      }
+  
+      &-img__image {
+        position: absolute;
+        top: 60px;
+        left: 570px;
+      }
+  
+      &-img__shadow {
+        position: absolute;
+        left: 500px;
+        top: 100px;
+      }
+    }
+  
+    .main-up {
+      width: 1450px;
+  
+      &__heart {
+        display: none;
+      }
+  
+      &__message {
+        display: none;
+      }
+  
+      &__notebook {
+        display: none;
+      }
+  
+      &__first {
+        position: absolute;
+        left: 300px;
+      }
+  
+      &__second {
+        position: absolute;
+        left: 400px;
+      }
+  
+      &__third {
+        left: 500px;
+      }
+  
+      &__text1 {
+        width: 200px;
+        position: absolute;
+        left: 450px;
+      }
+  
+      &__text2 {
+        width: 200px;
+        position: absolute;
+        left: 550px;
+      }
+  
+      &__text3 {
+        width: 200px;
+        position: absolute;
+        left: 550px;
+      }
+  
+      &__text4 {
+        width: 200px;
+        position: absolute;
+        left: 760px;
+      }
+  
+      &__text5 {
+        width: 300px;
+        position: absolute;
+        left: 750px;
+      }
+    }
+  
+    .main-center {
+      width: 1450px;
+  
+      &__photo3 {
+        display: none;
+      }
+  
+      &__photo4 {
+        display: none;
+      }
+  
+      &__describe3 {
+        display: none;
+      }
+  
+      &__describe4 {
+        display: none;
+      }
+  
+      &__photo2 {
+        position: absolute;
+        top: 2900px;
+        left: 450px;
+      }
+  
+      &__photo1 {
+        position: absolute;
+        left: 450px;
+      }
+  
+      &__describe1 {
+        position: absolute;
+        left: 450px;
+        width: 200px;
+      }
+  
+      &__describe2 {
+        position: absolute;
+        left: 450px;
+        width: 200px;
+      }
+  
+      &__button {
+        position: absolute;
+        left: 600px;
+      }
+    }
+  
+    .main-down {
+      width: 1450px;
+  
+      &__describe2 {
+        display: none;
+      }
+  
+      &__messege2 {
+        display: none;
+      }
+  
+      &__photo2 {
+        display: none;
+      }
+  
+      &__photo3 {
+        position: absolute;
+        left: 400px;
+        top: 4200px;
+      }
+  
+      &__messege3 {
+        position: absolute;
+        left: 430px;
+        top: 4500px;
+      }
+  
+      &__describe3 {
+        position: absolute;
+        left: 500px;
+        top: 4550px;
+      }
+  
+      &__photo1 {
+        position: absolute;
+        left: 400px;
+      }
+  
+      &__messege1 {
+        position: absolute;
+        left: 430px;
+      }
+  
+      &__describe1 {
+        position: absolute;
+        left: 500px;
+      }
+  
+      &__menu {
+        &__describe4 {
+          top: 4800px;
+          left: 380px;
+        }
+  
+        &__button {
+          top: 5000px;
+          left: 1050px;
+        }
+  
+        &__describe5 {
+          font-size: 20px;
+          position: absolute;
+          top: 5060px;
+          left: 1050px;
+        }
+      }
+    }
+  
+    .footer {
+      width: 1450px;
+  
+      &__name {
+        left: 200px;
+      }
+  
+      &__design {
+        left: 450px;
+      }
+  
+      &__describe1 {
+        left: 450px;
+      }
+  
+      &__describe2 {
+        left: 450px;
+      }
+  
+      &__describe3 {
+        left: 900px;
+      }
+  
+      &__describe4 {
+        left: 1350px;
+      }
+  
+      &__line {
+        left: 700px;
+      }
+    }
+  }
