@@ -129,19 +129,13 @@
   
   .main {}
   
-  .main-up {
-    background: url(/Rectangle\ 35.png) no-repeat center/cover;
+  .main-up1{ background: url(/Rectangle\ 35.png) no-repeat center/cover;
     width: 2110px;
     height: 1100px;
-    z-index: -1;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    
-    &.animated {
-      opacity: 1;
-      transform: translateY(0);
-  }
+    position: relative;
+    z-index: -1;}
+
+
     &__task {
       position: absolute;
       top: 1150px;
@@ -235,7 +229,7 @@
       top: 1700px;
       left: 1400px;
     }
-  }
+  
   
   .main-center {
     background: url(/Rectangle\ 36.png) no-repeat center/cover;
