@@ -31,7 +31,7 @@ elements.forEach(element => {
 
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 1100) {
+    if (window.scrollY >= 1000) {
         elements.forEach(element => {
             element.style.opacity = '1';
         });
