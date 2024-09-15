@@ -371,7 +371,7 @@
   top: 4700px;
   width: 2110px;
 }
-.main-down__menu__describe4 {
+.main-down__describe4 {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 40px;
@@ -380,7 +380,7 @@
   top: 4930px;
   left: 380px;
 }
-.main-down__menu__button {
+.main-down__button {
   border-radius: 27px;
   width: 196px;
   height: 63px;
@@ -613,11 +613,11 @@ body {
 
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ff0000;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 500px;
+  max-width: 1000px;
   opacity: 0;
   transform: scale(0.7);
   transition: opacity 0.3s ease, transform 0.3s ease;
