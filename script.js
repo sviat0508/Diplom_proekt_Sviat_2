@@ -42,7 +42,9 @@ window.addEventListener('scroll', () => {
 const modals = [
   { modal: document.querySelector(".md1"), btn: document.getElementById("modal_info1"), close: document.getElementById("close1") },
   { modal: document.querySelector(".md2"), btn: document.getElementById("modal_info2"), close: document.getElementById("close2") },
-  { modal: document.querySelector(".md3"), btn: document.getElementById("modal_info3"), close: document.getElementById("close3") }
+  { modal: document.querySelector(".md3"), btn: document.getElementById("modal_info3"), close: document.getElementById("close3") },
+  { modal: document.querySelector(".md4"), btn: document.getElementById("modal_info4"), close: document.getElementById("close4") }
+
 ];
 
 modals.forEach((item) => {
